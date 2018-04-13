@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple DS Widget</title>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="css/staff.css" />
+  <script type="text/javascript" src="scripts/jquery-1.5.1.min.js"></script>
+  <script src="scripts/controller.js"></script>
+  <script src="scripts/custom-widget.js"></script>
+
+  <script type="text/javascript">
+    // The following function will be called when page has been loaded
+    $(function() {
+      qmatic.webwidget.client.setOnLoaded(controller.onLoaded);
+      qmatic.webwidget.client.setOnLoadError(controller.onLoadError);
+    });
+  </script>
+
+</head>
+
+<body style="overflow: hidden;" class="container">
+  <div class="widget-container">
+    <!-- HTML content of the widget -->
+  </div>
+</body>
+
+</html>

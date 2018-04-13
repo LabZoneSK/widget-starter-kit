@@ -1,0 +1,31 @@
+<widget xmlns="http://www.w3.org/ns/widgets"
+    xmlns:q="http://qmatic.com"
+    id="http://qmatic.com/widgets/customWidget"
+    version="HEAD"
+    width="200"
+    height="320">
+
+    <name>customWidget</name>
+    <name xml:lang="en">Custom Widget</name>
+    <description>Description of the widget</description>
+    <license>GNU GPL</license>
+
+    <!--  Tell wookie to include resources from orchestra-widget feature. This feature allows us to get events from Orchestra and communicate with other widgets and receive q:attribute data --> 
+    <!--  This feature must be first in the list of features --> 
+    <feature name="http://qmatic.com/features/touchprinter-widget" required="true"/>
+    <feature name="http://qmatic.com/features/orchestra-connector" required="true"/>
+
+    <content src="index.html" /> 
+    <icon src="images/widget.png" /> 
+    <access origin="*" /> 
+
+    <q:standalone>false</q:standalone>
+    <!--
+    Widget Attributes
+    <q:attribute type="string" key="first_name" name="staff.first.name" description="staff.firstName.description" defaultValue=""></q:attribute> 
+    <q:attribute type="string" key="last_name" name="staff.last.name" description="staff.lastName.description" defaultValue=""></q:attribute>
+    <q:attribute type="string" key="service_button" name="staff.button" description="staff.button.description" defaultValue=""></q:attribute>  
+    <q:attribute type="image" key="profile" name="staff.image" description="staff.image.description"></q:attribute>
+    -->
+
+</widget>
